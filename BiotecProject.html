@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biotecnology</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #f0ee8e 0%, #95c8d8 50%);
+      }
+      h1 {
+        text-align: center;
+        color: #211f6b;
+        font-size: 60px;
+        border: 6px solid #211f6b;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+        color: #0152a4;
+        font-size: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 300%;
+        border-radius: 20px;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        color: #0167af;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      h5 {
+        text-align: center;
+        color: #040530;
+        opacity: 0.7;
+      }
+      div {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 100px;
+      }
+      .learn-more {
+        display: block;
+        text-align: center;
+        color: #0152a4;
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 15px;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .subscribe {
+        display: block;
+        margin: 0 auto;
+        background: #faad1a;
+        color: #211f6b;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      .subscribe:hover {
+        opacity: 0.55;
+        cursor: pointer;
+      }
+      .enrol-university {
+        text-decoration: none;
+      }
+      .enrol {
+        display: block;
+        margin: 0 auto;
+        background: #faad1a;
+        color: #211f6b;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      .enrol:hover {
+        opacity: 0.55;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Biotecnology</h1>
+      <h2>
+        Biotecnology is a broad area of biology, involving the use of living
+        systems and organisms to develop or make products.
+      </h2>
+      <img
+        src="https://www.msm.edu/online/BridgestoBiotechnologyPipelineProgram/images/bridgesbio-ib.jpg"
+        width="800px"
+      />
+      <br />
+      <hr />
+      <p>
+        <strong>
+          Biotechnology is a broad area of biology, involving the use of
+          <em>living systems</em> and <em>organisms</em> to develop or make
+          products. Depending on the tools and applications, it often overlaps
+          with related scientific fields. In the late 20th and early 21st
+          centuries, biotechnology has expanded to include new and diverse
+          sciences, such as <em>genomics</em>,
+          <em>recombinant gene techniques</em>, <em>applied immunology</em>, and
+          development of <em>pharmaceutical therapies</em> and
+          <em>diagnostic tests</em>. The term biotechnology was first used by
+          Karl Ereky in 1919, meaning the production of products from raw
+          materials with the aid of living organisms.
+        </strong>
+      </p>
+      <hr />
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Biotechnology"
+        target="_blank"
+        class="learn-more"
+      >
+        <strong>Learn more on Wikipedia</strong>
+      </a>
+      <button class="subscribe">Subscribe to the neswletter</button>
+      <br />
+      <a
+        href="https://www.dbt.univr.it/?ent=cs&id=385&tcs=N&lang=en"
+        target="_blank"
+        class="enrol-university"
+      >
+        <button class="enrol">Enrol to the University of Verona</button>
+      </a>
+      <h5>This page was built by Rexhina Qevani</h5>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let language = prompt("What is your primary language?");
+        language = language.toLocaleLowerCase();
+        language = language.trim();
+        if (language === "english") {
+          alert(
+            `Hello ${name}, you are now subscribed to the weekly newsletter!🔬🧬`
+          );
+        } else {
+          alert(
+            `Hello ${name}, you are now subscribed to the weekly newsletter!🔬🧬
+            You will be receiving your newsletter in ${language}.`
+          );
+        }
+      }
+      let subscribeButton = document.querySelector(".subscribe");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
